@@ -7,8 +7,6 @@ tasks:
     name: Firefox
   - command: source <(curl -s https://gitlab.com/nstoc6696/Gitpod-VNC/-/raw/master/aliases.sh)
     name: Aliases
-  - command: |
-      wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
-      tar -xzvf postman.tar.gz
-      ./Postman/Postman & firefox &
+  - command: wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz && tar -xzvf postman.tar.gz
     name: Install Postman
+  - command: ./Postman/Postman & firefox &
